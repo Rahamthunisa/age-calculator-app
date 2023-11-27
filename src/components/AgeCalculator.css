@@ -1,0 +1,201 @@
+/* AgeCalculator.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+
+
+
+.age-calculator {
+    font-family:'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    color: #151515;
+    max-width: 500px;
+    margin: 2rem ;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .mb-3{
+    display: flex;
+    justify-content: flex-start;
+    gap:1rem;
+    
+  }
+  .age-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .age-input-group label {
+   display: flex;
+   align-self: flex-start;
+   padding:0.4rem ;
+   color: #716F6F;
+   font-family:'Poppins', sans-serif;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: 700;
+   margin-bottom: 2px; 
+   line-height: normal;
+   letter-spacing: 3.5px;
+   text-transform: uppercase;
+   text-align: start;
+  }
+   
+  .age-input {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    width: 100px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    opacity: 0.7;
+  }
+  
+  .age-calculator .form-control:focus {
+    border-color: #6658d3;
+    box-shadow: 0 0 0 0.2rem rgba(102, 88, 211, 0.25);
+  }
+  .line-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line-button .rectangle{
+    width: 385px;
+    height: 1px;
+    background-color: #DCDCDC;
+    margin-top: 0.7rem;
+    
+  }
+  .age-calculator button {
+    background:#6658d3;
+    display: flex;
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  img.curve{
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    
+  }
+  
+  .age-calculator button:hover {
+    background-color: #151515;
+  }
+  
+  .age-results {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .age-results h1,
+  .age-results h2,
+  .age-results h3 {
+  color: #333;
+  margin: 0.5rem 0;
+  font-family:'Poppins', sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%; 
+  letter-spacing: -2.08px;
+  }
+  
+.number {
+  color: #6658d3;
+}
+
+.text {
+  color: #151515;
+}
+.error-message{
+color:  #FF5959;
+font-family:'Poppins', sans-serif;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}  
+
+/*mobileresponsive*/
+
+
+@media (max-width: 600px) {
+  .age-calculator {
+    font-size: 18px; /* Smaller font size */
+    margin: 1rem; /* Adjust margin */
+    padding: 1rem; /* Adjust padding */
+    max-width: 90%; /* Full width on small screens */
+  }
+
+  .mb-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Stack inputs vertically */
+    gap: 0.5rem;
+  }
+  .age-input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .age-input-group label {
+    font-size: 12px; /* Increase label font size for readability */
+    
+   
+  }
+
+  .age-input {
+    font-size: 16px; /* Adjust font size for inputs */
+    width: 70px; /* Adjust width */
+    padding: 0.5rem; /* Adjust padding */
+  }
+  .line-button {
+    display: flex;
+    justify-content: center; /* This will center the button horizontally */
+    align-items: center; /* This will center the button vertically if needed */
+    flex-direction: column; /* Stack the line and button if they are in a row */
+  }
+  .line-button .rectangle {
+    width: 90%; /* Adjust the width of the line as needed */
+    margin:1rem auto; /* Center the line horizontally and add margin */
+  }
+  .age-calculator button {
+    padding: 0.8rem; /* Adjust the padding of the button */
+    margin: auto; /* Add top margin and center the button horizontally */
+    /* Ensure width is set to auto or not set so it doesn't interfere with centering */
+  }
+
+  .age-results h1, .age-results h2, .age-results h3 {
+    font-size: 28px; /* Smaller font size for results */
+  }
+
+  .error-message {
+    font-size: 12px; /* Adjust error message font size */
+  }
+  img.curve {
+    width: 15px; /* Adjust the image size for mobile if necessary */
+    height: 15px;
+    /* Center the image if it's not already */
+    display: block;
+    margin: auto;
+  }
+  /* Add any additional styling adjustments for mobile here */
+}
